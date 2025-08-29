@@ -76,7 +76,7 @@ def print_banner():
 {Fore.MAGENTA}{Style.BRIGHT}
 █▀ █▀█ █░░   █ █▄░█ ░░█ █▀▀ █▀▀ ▀█▀ █ █▀█ █▄░█
 ▄█ ▀▀█ █▄▄   █ █░▀█ █▄█ ██▄ █▄▄ ░█░ █ █▄█ █░▀█
-                                         SQL Injection Scanner v1.0
+                                         SQL Injection Scanner V1.0
       
 ---------------------------------------------------
 {Style.RESET_ALL}
