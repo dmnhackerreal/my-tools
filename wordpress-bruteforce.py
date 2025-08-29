@@ -12,9 +12,10 @@ import time
 def print_banner():
     """Prints a welcome banner."""
     banner = """
- 
+ █░█░█ █▀█ █▀█ █▀▄ █░░ █ █▀ ▀█▀   █▀▀ █▀▀ █▄░█ █▀▀ █▀█ ▄▀█ ▀█▀ █▀█ █▀█
+▀▄▀▄▀ █▄█ █▀▄ █▄▀ █▄▄ █ ▄█ ░█░   █▄█ ██▄ █░▀█ ██▄ █▀▄ █▀█ ░█░ █▄█ █▀▄
 ---------------------------------------------------
-       WordPress Brute-force Password 
+       WordPress Bruteforce 
        For testing the security of your own website
 ---------------------------------------------------
     """
