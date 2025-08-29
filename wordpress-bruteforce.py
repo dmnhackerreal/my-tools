@@ -3,11 +3,6 @@ import sys
 import argparse
 import time
 
-# --- IMPORTANT INFORMATION ---
-# This script is designed for educational purposes and for security testing on your own systems.
-# Using this tool for unauthorized access to any system is illegal and unethical
-# and can lead to severe legal consequences. The responsibility for using this tool rests with the user.
-# Always obtain written permission before performing any security tests on other websites.
 
 def print_banner():
     """Prints a welcome banner."""
@@ -16,7 +11,6 @@ def print_banner():
  ▀▄▀▄▀ █▄█ █▀▄ █▄▀ █▀▀ █▀▄ ██▄ ▄█ ▄█   █▄█ █▀▄ █▄█ ░█░ ██▄ █▀░ █▄█ █▀▄ █▄▄ ██▄
 ---------------------------------------------------
        WordPress Bruteforce v1.0
-       For testing the security of your own website
 ---------------------------------------------------
     """
     print(banner)
