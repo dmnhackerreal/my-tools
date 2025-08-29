@@ -6,7 +6,7 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 # Define the target URL for scraping
-TARGET_URL = "https://www.xvideos.com/"
+TARGET_URL = "https://thehiddenwiki.org"
 
 def display_banner(text):
     """
