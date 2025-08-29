@@ -73,9 +73,9 @@ def scan_network_ports(ip_range, ports='1-1024'):
 if __name__ == "__main__":
     print_banner() # Call the banner function at the start
     if len(sys.argv) < 2:
-        print(f"{Fore.RED}Usage: python network_scanner.py <IP_Range> [Ports]{Style.RESET_ALL}")
-        print(f"{Fore.YELLOW}Example: python network_scanner.py 192.168.1.0/24{Style.RESET_ALL}")
-        print(f"{Fore.YELLOW}Example: python network_scanner.py 192.168.1.100 22,80,443{Style.RESET_ALL}")
+        print(f"{Fore.RED}Usage: python network-scanner.py <IP_Range> [Ports]{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}Example: python network-scanner.py 192.168.1.0/24{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}Example: python network-scanner.py 192.168.1.100 22,80,443{Style.RESET_ALL}")
         sys.exit(1)
 
     ip_range_arg = sys.argv[1]
