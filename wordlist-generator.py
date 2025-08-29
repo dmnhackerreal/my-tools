@@ -3,12 +3,6 @@ import argparse
 import sys
 import os
 
-# --- IMPORTANT INFORMATION ---
-# This script is designed for educational purposes and for generating wordlists
-# for security testing on your own systems.
-# Using generated wordlists for unauthorized access to any system is illegal, unethical,
-# and can lead to severe legal consequences. The responsibility for using this tool rests with the user.
-# Always obtain written permission before performing any security tests on other websites.
 
 def print_banner():
     """Prints a welcome banner."""
@@ -16,8 +10,6 @@ def print_banner():
 █░█░█ █▀█ █▀█ █▀▄ █░░ █ █▀ ▀█▀   █▀▀ █▀▀ █▄░█ █▀▀ █▀█ ▄▀█ ▀█▀ █▀█ █▀█
 ▀▄▀▄▀ █▄█ █▀▄ █▄▀ █▄▄ █ ▄█ ░█░   █▄█ ██▄ █░▀█ ██▄ █▀▄ █▀█ ░█░ █▄█ █▀▄
         Custom Wordlist Generator v1.0
-        For creating strong wordlists for your own security tests
-  
 ---------------------------------------------------
     """
     print(banner)
