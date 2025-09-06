@@ -5,14 +5,6 @@ from colorama import Fore, Style, init
 # Initialize Colorama to make it work on different terminals
 init(autoreset=True)
 
-def display_banner(text):
-    """
-    Displays a colorful banner for the script name.
-    """
-    banner_color = Fore.CYAN + Style.BRIGHT
-    print(banner_color + "========================================")
-    print(banner_color + text)
-    print(banner_color + "========================================")
 
 def get_links(url, count):
     """
