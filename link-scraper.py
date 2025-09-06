@@ -75,7 +75,7 @@ def main():
     
     █░░ █ █▄░█ █▄▀   █▀ █▀▀ █▀█ ▄▀█ █▀█ █▀▀ █▀█
     █▄▄ █ █░▀█ █░█   ▄█ █▄▄ █▀▄ █▀█ █▀▀ ██▄ █▀▄
-                           Link Scraper V1.0
+            Link Scraper V1.1
 """
     display_banner(banner_text)
     
@@ -100,12 +100,12 @@ def main():
         for i, link in enumerate(links, 1):
             # Alternate colors for better readability
             color = Fore.BLUE if i % 2 != 0 else Fore.CYAN
-            print(f"{color}{i}. {link}{Style.RESET_ALL}")
+            # The following line was updated to remove the numbering
+            print(f"{color}{link}{Style.RESET_ALL}")
             
     except ValueError:
         print(f"{Fore.RED}Invalid input. Please enter a valid number for links.{Style.RESET_ALL}")
     except Exception as e:
         print(f"{Fore.RED}An unexpected error occurred: {e}{Style.RESET_ALL}")
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":    main()
