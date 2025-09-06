@@ -19,11 +19,10 @@ def get_links(url, count):
     """
     try:
         # Send a GET request to the URL
-        # اضافه کردن یک User-Agent برای شبیه‌سازی مرورگر و جلوگیری از بلاک شدن توسط برخی سایت‌ها
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
-        response = requests.get(url, headers=headers, timeout=10) # اضافه کردن timeout
+        response = requests.get(url, headers=headers, timeout=10)
         # Check if the request was successful
-        response.raise_for_status() # برای تشخیص خطاهای HTTP مانند 404 یا 500
+        response.raise_for_status() 
         
         # Parse the HTML content
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -35,7 +34,6 @@ def get_links(url, count):
         scraped_links = []
         for link in links:
             href = link['href']
-            # فیلتر کردن لینک‌های خالی و لینک‌های داخلی که فقط # هستند
             if href and not href.startswith('#'):
                 scraped_links.append(href)
             if len(scraped_links) >= count:
