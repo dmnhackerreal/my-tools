@@ -5,6 +5,14 @@ from colorama import Fore, Style, init
 # Initialize Colorama to make it work on different terminals
 init(autoreset=True)
 
+def display_banner(text):
+    """
+    Displays a colorful banner for the script name.
+    """
+    banner_color = Fore.CYAN + Style.BRIGHT
+    print(banner_color + "========================================")
+    print(banner_color + text)
+    print(banner_color + "========================================")
 
 def get_links(url, count):
     """
@@ -20,7 +28,7 @@ def get_links(url, count):
     try:
         # Send a GET request to the URL
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, timeout=10) 
         # Check if the request was successful
         response.raise_for_status() 
         
@@ -34,6 +42,7 @@ def get_links(url, count):
         scraped_links = []
         for link in links:
             href = link['href']
+            # aaaaa
             if href and not href.startswith('#'):
                 scraped_links.append(href)
             if len(scraped_links) >= count:
@@ -65,7 +74,7 @@ def main():
     
     █░░ █ █▄░█ █▄▀   █▀ █▀▀ █▀█ ▄▀█ █▀█ █▀▀ █▀█
     █▄▄ █ █░▀█ █░█   ▄█ █▄▄ █▀▄ █▀█ █▀▀ ██▄ █▀▄
-            Link Scraper V1.1
+            Link Scraper V1.0
 """
     display_banner(banner_text)
     
